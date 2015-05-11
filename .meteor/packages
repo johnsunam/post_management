@@ -8,6 +8,5 @@ meteor-platform
 mizzao:bootstrap-3
 iron:router
 accounts-ui-bootstrap-dropdown
-accounts-ui
 accounts-password
 spin
