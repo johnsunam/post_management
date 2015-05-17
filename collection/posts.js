@@ -1,4 +1,9 @@
 Posts= new Meteor.Collection('posts');
+Posts.allow({
+  update: function(userId, post) { return ownsDocument(userId, post); },
+  remove: function(userId, post) { return ownsDocument(userId, post); },
+});
++
 Meteor.methods({
     postInsert: function(postAttributes) {
 //alert('hello');
